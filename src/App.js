@@ -6,15 +6,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Have fun 🍠 </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="info">
+          coded by{" "}
+          <a href="https://github.com/cansusari14/dictionary-project">
+            cansusari
+          </a>
+        </p>
       </header>
     </div>
   );
