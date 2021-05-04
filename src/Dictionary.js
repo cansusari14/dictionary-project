@@ -23,9 +23,27 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <form onSubmit={search} onChange={handleKeywordChange}>
-        <input type="search" autoFocus="{true}" />
-      </form>
+      <div className="content">
+        <h1 className="title">Dictionary</h1>
+        <h2 className="secondary-title">/dɪkʃ(ə)n(ə)ri/</h2>
+        <p className="explanation">
+          A web app in react, created by{" "}
+          <a
+            className="personal-link"
+            href="https://hi-there-its-cansu.netlify.app/"
+            target="_blank"
+          >
+            me
+          </a>
+          <br />
+          simple, hustle-free <br />
+          just enter your desired word and surprise thee.
+        </p>
+        <p className="explanation">Type a word to search...</p>
+        <form onSubmit={search} onChange={handleKeywordChange}>
+          <input type="search" autoFocus="{true}" />
+        </form>
+      </div>
     </div>
   );
 }

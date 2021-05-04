@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <main>
         <Dictionary />
+        <Dictionary />
       </main>
     </div>
   );
