@@ -1,7 +1,8 @@
 .Results {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 6vw;
+  overflow-y: auto;
 }
 .Results .title {
   font-size: 3rem;

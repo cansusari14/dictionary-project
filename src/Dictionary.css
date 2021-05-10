@@ -3,9 +3,7 @@
   color: white;
   display: flex;
   align-items: center;
-  padding-left: 6vw;
-  padding-top: 6vw;
-  padding-bottom: 6vw;
+  padding: 6vw;
 
   /* justify-content: center; */
 }
