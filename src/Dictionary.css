@@ -3,7 +3,9 @@
   color: white;
   display: flex;
   align-items: center;
-  padding: 6vw;
+  padding-left: 6vw;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
 
   /* justify-content: center; */
 }
@@ -18,7 +20,39 @@
 }
 .Dictionary .explanation {
   font-size: 1rem;
+  line-height: 2rem;
 }
 .Dictionary .personal-link {
   color: white;
+}
+.Dictionary input {
+  color: black;
+  border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
+  width: 66%;
+  height: 3rem;
+  margin-right: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: Karla;
+}
+.Dictionary button {
+  display: inline-block;
+  border-radius: 3px;
+  outline: none;
+  height: 3rem;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Karla;
+}
+.Dictionary button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
 }

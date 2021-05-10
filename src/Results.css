@@ -1,0 +1,9 @@
+.Results {
+  display: flex;
+  align-items: center;
+  padding: 6vw;
+}
+.Results .title {
+  font-size: 3rem;
+  margin-top: 0;
+}
