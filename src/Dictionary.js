@@ -36,6 +36,7 @@ export default function Dictionary() {
             className="personal-link"
             href="https://hi-there-its-cansu.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             me
           </a>
