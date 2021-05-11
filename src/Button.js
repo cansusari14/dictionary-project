@@ -1,4 +1,7 @@
 import React from "react";
+import "./Button.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Button(props) {
   function handleClick() {
@@ -13,7 +16,7 @@ export default function Button(props) {
         aria-checked="false"
         onClick={handleClick}
       >
-        <span>Play/Pause</span>
+        <FontAwesomeIcon icon={faVolumeUp} />
       </button>
     </div>
   );

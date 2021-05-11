@@ -1,0 +1,16 @@
+.Button {
+  display: inline-block;
+}
+.Button button {
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: Karla;
+  background-color: transparent;
+  outline: none;
+  border-width: 0px;
+  text-decoration: underline;
+  padding: 0;
+}

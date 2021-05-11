@@ -7,7 +7,6 @@ export default function Phonetics(props) {
   return (
     <div className="Phonetics">
       <Button audioUrl={props.phonetic.audio} />
-      <br />
       <h2 className="text">{props.phonetic.text}</h2>
     </div>
   );

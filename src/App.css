@@ -1,12 +1,22 @@
 .App {
   height: 100vh;
-  overflow: hidden;
 }
 .App main {
-  display: flex;
   height: 100vh;
 }
 .App main > * {
   flex-basis: 50%;
   box-sizing: border-box;
+}
+@media (min-width: 800px) {
+  .App {
+    overflow: hidden;
+  }
+  .App main > * {
+    flex-basis: 50%;
+  }
+  .App main {
+    display: flex;
+    height: 100vh;
+  }
 }

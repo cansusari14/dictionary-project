@@ -2,10 +2,10 @@
   background: black;
   color: white;
   display: flex;
-  align-items: center;
   padding: 6vw;
-
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .Dictionary .title {
@@ -53,4 +53,16 @@
   background-color: black;
   color: white;
   border-color: white;
+}
+@media (min-width: 800px) {
+  .Dictionary {
+    display: flex;
+  }
+  .App main > * {
+    flex-basis: 50%;
+  }
+  .App main {
+    display: flex;
+    height: 100vh;
+  }
 }
