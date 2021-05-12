@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 import "./Results.css";
 import Picture from "./Picture";
 
 export default function Results(props) {
+  useEffect(() => {
+    if (props.results && props.results.word !== "curiosity") {
+      const element = document.querySelector(".Results");
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [props.results]);
+
   if (props.results) {
     return (
       <div className="Results">
@@ -24,11 +31,13 @@ export default function Results(props) {
               </div>
             );
           })}
-          <Picture photos={props.photos} />
+          <div>
+            <Picture photos={props.photos} />
+          </div>
         </div>
       </div>
     );
   } else {
-    return null;
+    return <div className="Results" />;
   }
 }

@@ -1,11 +1,11 @@
 .Results {
-  display: flex;
-  /* align-items: center; */
-  padding: 6vw;
   overflow-y: auto;
 }
 .Results .title {
   font-size: 3rem;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+.Results .content {
+  margin: 8vw;
 }

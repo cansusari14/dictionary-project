@@ -2,7 +2,7 @@
   background: black;
   color: white;
   display: flex;
-  padding: 6vw;
+  padding: 8vw;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -36,6 +36,11 @@
   font-size: 1rem;
   font-family: Karla;
 }
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
 .Dictionary button {
   display: inline-block;
   border-radius: 3px;
@@ -45,9 +50,10 @@
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: 500;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   cursor: pointer;
   font-family: Karla;
+  background-color: white;
 }
 .Dictionary button:hover {
   background-color: black;
@@ -57,8 +63,8 @@
 @media (min-width: 800px) {
   .Dictionary {
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: baseline;
+    justify-content: left;
   }
   .App main > * {
     flex-basis: 50%;

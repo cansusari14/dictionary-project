@@ -1,11 +1,13 @@
 import React from "react";
+import "./Photos.css";
 
 export default function Picture(props) {
+  console.log(props.photos);
   if (props.photos) {
     return (
       <div className="Photos">
         {props.photos.map(function (photo, index) {
-          return <img src={photo.src.landscape} alt={""} />;
+          return <img key={index} src={photo.src.landscape} alt={""} />;
         })}
       </div>
     );
