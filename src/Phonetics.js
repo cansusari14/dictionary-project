@@ -3,7 +3,6 @@ import "./Phonetics.css";
 import Button from "./Button";
 
 export default function Phonetics(props) {
-  console.log(props.phonetic);
   return (
     <div className="Phonetics">
       <Button audioUrl={props.phonetic.audio} />
