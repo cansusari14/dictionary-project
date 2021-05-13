@@ -11,7 +11,17 @@ export default function Results(props) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   }, [props.results]);
-
+  if (props.error) {
+    return (
+      <div className="Results">
+        <div className="content">
+          <h2 className="title">
+            Hey! Could't find a matching word!<br></br>Maybe try one more time:)
+          </h2>
+        </div>
+      </div>
+    );
+  }
   if (props.results) {
     return (
       <div className="Results">

@@ -7,8 +7,10 @@ import Results from "./Results";
 function App() {
   let [results, setResults] = useState();
   let [photos, setPhotos] = useState("");
+  let [error, setError] = useState("");
 
   function handleResponse(response) {
+    setError(false);
     setResults(response.data[0]);
   }
   function handlePexelsResponse(response) {
@@ -16,7 +18,7 @@ function App() {
   }
 
   function handleError() {
-    alert("Hey! Couldn't find a matching explanation!");
+    setError(true);
   }
 
   function handleSearch(keyword) {
@@ -40,7 +42,12 @@ function App() {
     <div className="App">
       <main>
         <Dictionary onSearch={handleSearch} />
-        <Results results={results} photos={photos} word="curiosity" />
+        <Results
+          results={results}
+          photos={photos}
+          word="curiosity"
+          error={error}
+        />
       </main>
     </div>
   );
